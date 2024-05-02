@@ -49,6 +49,7 @@ const routers: Array<Routers> = [
 export const metadata: Metadata = {
   /*   title: "NetMount", */
   description: "统一管理和挂载云存储设施",
+  
 };
 
 
@@ -57,10 +58,21 @@ const RootLayout = ({ children, params }: { children?: React.ReactNode, params: 
 
 
   return (<html lang={params.lang}>
-    <head>
-      <script src="/js/51la.js"/>
-    </head>
     <body style={{ margin: 0, padding: 0 }}>
+    <Head>
+        {/* 在这里插入51.la的统计代码 */}
+        <script
+          charSet="UTF-8"
+          id="LA_COLLECT"
+          src="//sdk.51.la/js-sdk-pro.min.js"
+          async
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `LA.init({id:"KQdBh9bWzAxDECPa",ck:"KQdBh9bWzAxDECPa"})`,
+          }}
+        />
+      </Head>
       <AntdRegistry>
         <Layout style={{ backgroundColor: '#fff', overflow: 'hidden' }}>
           <HeaderMod contentWrapperStyle={contentWrapperStyle} routers={routers} />
