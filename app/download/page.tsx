@@ -9,7 +9,7 @@ export default function Download() {
                 <Card style={{ width: '15rem', height: '10rem', textAlign: 'center', alignItems: 'center', margin: 'auto' }}>
                     <img style={{ margin: 'auto' }} src="/img/system/windows.svg" />
                     <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Windows</p>
-                    <Button href='//api.hotpe.top/NetMount/Download/?os=windows' style={{ marginTop: '1rem' }} type='primary'>下载</Button>
+                    <Button href='//api.hotpe.top/API/NetMount/Download/?os=windows' style={{ marginTop: '1rem' }} type='primary'>下载</Button>
                 </Card>
                 <Card style={{ width: '15rem', height: '10rem', textAlign: 'center', alignItems: 'center', margin: 'auto' }}>
                     <img style={{ margin: 'auto' }} src="/img/system/linux.svg" />
