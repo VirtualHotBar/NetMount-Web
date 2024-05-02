@@ -1,113 +1,129 @@
-import Image from "next/image";
+import React, { CSSProperties, useEffect, useRef, useState } from 'react'
+import { Button, Carousel, Col, Divider, Row, Space } from 'antd';
+import Title from 'antd/es/typography/Title';
+import Paragraph from 'antd/es/typography/Paragraph';
+import { DownloadOutlined } from '@ant-design/icons';
+import ScrollImages from '@/components/scrollImages';
+import StackedImages from '@/components/stackedImages';
 
-export default function Home() {
+const boxStyle: CSSProperties = {
+  boxShadow: 'rgba(140, 152, 164, 0.176) 0px 10px 40px 10px',
+  border: '-1px solid #ccc',
+  borderRadius: '8px'
+}
+
+export default function page() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div style={{ paddingTop: '8rem' }}>
+      <Row>
+        <Col flex={24}>
+          <div style={{ height: '6rem' }}></div>
+          <p style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#333333', margin: '0 0 10px 0' }}>
+            <img src="/img/text.svg" style={{ width: '7rem' }} alt='NetMount' />
+          </p>
+          <span style={{/* color:'rgb(55, 125, 255)',  */fontSize: '2.9991rem', fontWeight: 'bold' }}>统一管理和挂载云存储设施</span>
+          <p>
+
+          </p>
+          <Button href='/download' type="primary" icon={<DownloadOutlined />} size="large" style={{ marginTop: '20px' }}>
+            下载
+          </Button>
+        </Col>
+        <Col flex={24}>
+          <StackedImages style={{ width: '35rem', height: '35rem' }} images={['https://p1.hotpe.top/i/p/1/66321983c6d5b.png', 'https://p1.hotpe.top/i/p/1/6632199c4e55c.png']} />
+        </Col>
+      </Row>
+
+      <Divider />
+
+      <div>
+        <p style={{ textAlign: 'center', fontSize: '1.5rem', color: 'rgb(55, 125, 255)' /* 'rgba(0, 0, 0, 0.4)' */ }}>一个软件</p>
+        <p style={{ textAlign: 'center', fontSize: '35px' }}><strong>管理你的所有云存储</strong></p>
+        <br />
+        {/* 网盘 */}
+        <ScrollImages scrollSpeed={50} images={[
+          { title: 'Alist', img: '/img/storage/others/alist.svg' },
+
+          { title: 'Box', img: '/img/storage/netdisk/Box.svg' },
+          { title: 'Dropbox', img: '/img/storage/netdisk/Dropbox.png' },
+          { title: 'GoogleDrive', img: '/img/storage/netdisk/GoogleDrive.svg' },
+          { title: 'Mega', img: '/img/storage/netdisk/Mega.svg' },
+          { title: 'OneDrive', img: '/img/storage/netdisk/OneDrive.svg' },
+          { title: 'pCloud', img: '/img/storage/netdisk/pCloud2.png' },
+          { title: 'SharePoint', img: '/img/storage/netdisk/SharePoint.svg' },
+          { title: 'YandexDisk', img: '/img/storage/netdisk/YandexDisk2.png' },
+        ]} />
+        <br />
+        <ScrollImages scrollSpeed={70} images={[
+          { title: 'OSS', img: '/img/storage/vendors/AlibabaObjectStorage.svg' },
+          { title: 'Azure', img: '/img/storage/vendors/Azure.svg' },
+          { title: 'TencentCloud', img: '/img/storage/vendors/TencentCloud.svg' },
+          { title: 'Backblaze', img: '/img/storage/vendors/Backblaze.svg' },
+          { title: 'CloudflareR2', img: '/img/storage/vendors/CloudflareR2.svg' },
+          { title: 'Cloudian', img: '/img/storage/vendors/Cloudian.svg' },
+          { title: 'DigitalOcean', img: '/img/storage/vendors/DigitalOcean.svg' },
+          { title: 'DirectCloud', img: '/img/storage/vendors/DirectCloud.svg' },
+          { title: 'GoogleCloud', img: '/img/storage/vendors/GoogleCloudPlatform.svg' },
+          { title: 'IBMCloud', img: '/img/storage/vendors/IBMObjectStorage.svg' },
+        ]} />
+        <br />
+        <ScrollImages scrollSpeed={60} images={[
+          { title: 'IDrivee', img: '/img/storage/vendors/IDrivee2.svg' },
+          { title: 'OracleCloud', img: '/img/storage/vendors/OracleCloud.svg' },
+
+          { title: 'AWS S3', img: '/img/storage/protocol/aws-s3.svg' },
+          { title: 'FTP', img: '/img/storage/protocol/ftp.png' },
+          { title: 'WebDAV', img: '/img/storage/protocol/webdav.jpg' },
+          { title: 'MinIO', img: '/img/storage/protocol/MinIO.svg' },
+          { title: 'Nextcloud', img: '/img/storage/others/Nextcloud.svg' },
+          { title: 'OwnCloud', img: '/img/storage/others/OwnCloud.svg' },
+        ]} />
+      </div>
+
+      <div style={{ marginTop: '5rem', textAlign: 'center' }}>
+        {/* <p style={{ fontSize: '1.5rem', color: 'rgb(55, 125, 255)' }}>存储管理</p> */}
+        <p style={{ fontSize: '35px', /* color: 'rgb(55, 125, 255)' */ }}><strong>集中直观的存储管理</strong></p>
+        <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136);' }}>功能丰富的文件浏览器，支持文件上传、复制、移动、删除、重命名。</p>
+        <br />
+        <div style={{ display: 'flex', width: '100%' }}>
+          <Space size={'large'} style={{ margin: 'auto' }}>
+            <div style={{ ...boxStyle, width: '35rem', height: '17rem', overflow: 'hidden' }}>
+              <img src="https://p1.hotpe.top/i/p/1/663324b5e0c69.png" style={{
+                width: '100%',
+              }} />
+            </div>
+            <div style={{ ...boxStyle, width: '35rem', height: '17rem', overflow: 'hidden' }}>
+              <img src="https://p1.hotpe.top/i/p/1/66321a05cddfc.png" style={{
+                width: '100%',
+              }} />
+            </div>
+          </Space>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+
+      <div style={{ marginTop: '8rem', width: '100%',display: 'flex', justifyContent: 'center' }}>
+        <div style={{width: '50%'}}>            
+          <p style={{ fontSize: '1.5rem', color: 'rgb(55, 125, 255)' }}>挂载云存储</p>
+          <p style={{ fontSize: '35px', /* color: 'rgb(55, 125, 255)' */ }}><strong>像本地磁盘一样管理你的文件</strong></p>
+          <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136);' ,paddingRight: '5%'}}>云存储整合为本地文件系统，使用户能无缝访问云端资源，通过虚拟文件系统技术实现高效操作，简化数据管理，提供流畅的云-本地交互体验。</p>
+        </div>
+
+        <div style={{ ...boxStyle, width: '50%', height: '20rem', overflow: 'hidden',textAlign: 'right' }}>
+          <img src="https://p1.hotpe.top/i/p/1/66321b052e370.png" style={{
+            width: '100%',
+          }} />
+        </div>
+
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div style={{ marginTop: '5rem', marginBottom: '5rem', width: '100%', textAlign: 'center' }}>
+        <p style={{ fontSize: '1.1rem', }}><strong>NetMount由<a target="_blank" className="class-link" rel="noopener" href='https://github.com/rclone/rclone'>Rclone</a>强力驱动</strong></p>
       </div>
-    </main>
-  );
+
+
+    </div>
+  )
 }
+
