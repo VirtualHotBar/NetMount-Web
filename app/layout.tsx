@@ -19,7 +19,7 @@ const contentWrapperStyle = {
   width: '100%',
   margin: '0 auto',
   justifyContent: 'center',
-  overflow: 'hidden' 
+  /* overflow: 'hidden'  */
 };
 
 
@@ -58,7 +58,7 @@ const RootLayout = ({ children, params }: { children?: React.ReactNode, params: 
   return (<html lang={params.lang}>
     <body style={{ margin: 0, padding: 0 }}>
       <AntdRegistry>
-        <Layout style={{ backgroundColor: '#fff' }}>
+        <Layout style={{ backgroundColor: '#fff' ,overflow: 'hidden' }}>
           <HeaderMod contentWrapperStyle={contentWrapperStyle} routers={routers} />
           <Content >
             <div style={{ ...contentWrapperStyle, marginTop: '64px' }}>

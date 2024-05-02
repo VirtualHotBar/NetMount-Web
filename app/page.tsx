@@ -31,7 +31,7 @@ export default function page() {
           </Button>
         </Col>
         <Col flex={24}>
-          <StackedImages style={{ width: '35rem', height: '35rem' }} images={['https://p1.hotpe.top/i/p/1/66321983c6d5b.png', 'https://p1.hotpe.top/i/p/1/6632199c4e55c.png']} />
+          <StackedImages style={{ width: '35rem', height: '35rem' }} images={['//p1.hotpe.top/i/p/1/66321983c6d5b.png', '//p1.hotpe.top/i/p/1/6632199c4e55c.png']} />
         </Col>
       </Row>
 
@@ -89,12 +89,12 @@ export default function page() {
         <div style={{ width: '100%' }}>
           <Space size={'large'} style={{ margin: 'auto' }}>
             <div style={{ ...boxStyle, width: '35rem', height: '17rem', overflow: 'hidden' }}>
-              <img src="https://p1.hotpe.top/i/p/1/663324b5e0c69.png" style={{
+              <img src="//p1.hotpe.top/i/p/1/663324b5e0c69.png" style={{
                 width: '100%',
               }} />
             </div>
             <div style={{ ...boxStyle, width: '35rem', height: '17rem', overflow: 'hidden' }}>
-              <img src="https://p1.hotpe.top/i/p/1/66321a05cddfc.png" style={{
+              <img src="//p1.hotpe.top/i/p/1/66321a05cddfc.png" style={{
                 width: '100%',
               }} />
             </div>
@@ -111,7 +111,7 @@ export default function page() {
         </div>
 
         <div style={{ ...boxStyle, width: '50%', height: '20rem', overflow: 'hidden',textAlign: 'right' }}>
-          <img src="https://p1.hotpe.top/i/p/1/66321b052e370.png" style={{
+          <img src="//p1.hotpe.top/i/p/1/66321b052e370.png" style={{
             width: '100%',
           }} />
         </div>
