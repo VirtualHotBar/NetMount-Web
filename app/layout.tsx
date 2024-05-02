@@ -38,10 +38,10 @@ const routers: Array<Routers> = [
     word: '下载',
     title: '下载 - NetMount',
     path: '/download',
-  },{
-    word:'GitHub',
-    title:'',
-    path:'//github.com/VirtualHotBar/NetMount/'
+  }, {
+    word: 'GitHub',
+    title: '',
+    path: '//github.com/VirtualHotBar/NetMount/'
   }
 ]
 //const router = useRouter();
@@ -55,10 +55,14 @@ export const metadata: Metadata = {
 const RootLayout = ({ children, params }: { children?: React.ReactNode, params: { lang: string } }) => {
   //const router =usePathname(); // 使用 useRouter 钩子
 
+
   return (<html lang={params.lang}>
+    <head>
+      <script src="/js/51la.js"/>
+    </head>
     <body style={{ margin: 0, padding: 0 }}>
       <AntdRegistry>
-        <Layout style={{ backgroundColor: '#fff' ,overflow: 'hidden' }}>
+        <Layout style={{ backgroundColor: '#fff', overflow: 'hidden' }}>
           <HeaderMod contentWrapperStyle={contentWrapperStyle} routers={routers} />
           <Content >
             <div style={{ ...contentWrapperStyle, marginTop: '64px' }}>
