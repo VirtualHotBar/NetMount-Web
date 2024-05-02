@@ -19,6 +19,7 @@ const contentWrapperStyle = {
   width: '100%',
   margin: '0 auto',
   justifyContent: 'center',
+  overflow: 'hidden' 
 };
 
 

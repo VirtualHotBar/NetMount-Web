@@ -86,7 +86,7 @@ export default function page() {
         <p style={{ fontSize: '35px', /* color: 'rgb(55, 125, 255)' */ }}><strong>集中直观的存储管理</strong></p>
         <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136);' }}>功能丰富的文件浏览器，支持文件上传、复制、移动、删除、重命名。</p>
         <br />
-        <div style={{ display: 'flex', width: '100%' }}>
+        <div style={{ width: '100%' }}>
           <Space size={'large'} style={{ margin: 'auto' }}>
             <div style={{ ...boxStyle, width: '35rem', height: '17rem', overflow: 'hidden' }}>
               <img src="https://p1.hotpe.top/i/p/1/663324b5e0c69.png" style={{
