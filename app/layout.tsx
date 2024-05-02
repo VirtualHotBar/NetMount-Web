@@ -59,7 +59,7 @@ const RootLayout = ({ children, params }: { children?: React.ReactNode, params: 
 
   return (<html lang={params.lang}>
     <body style={{ margin: 0, padding: 0 }}>
-    <Head>
+    <head>
         {/* 在这里插入51.la的统计代码 */}
         <script
           charSet="UTF-8"
@@ -72,7 +72,7 @@ const RootLayout = ({ children, params }: { children?: React.ReactNode, params: 
             __html: `LA.init({id:"KQdBh9bWzAxDECPa",ck:"KQdBh9bWzAxDECPa"})`,
           }}
         />
-      </Head>
+      </head>
       <AntdRegistry>
         <Layout style={{ backgroundColor: '#fff', overflow: 'hidden' }}>
           <HeaderMod contentWrapperStyle={contentWrapperStyle} routers={routers} />
