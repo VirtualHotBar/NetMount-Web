@@ -10,10 +10,6 @@ export default function Template({ children }: { children: React.ReactNode }) {
         <Script
             src="//sdk.51.la/js-sdk-pro.min.js?id=KQdBh9bWzAxDECPa&ck=KQdBh9bWzAxDECPa"
         />
-{/*         <script
-            dangerouslySetInnerHTML={{
-                __html: `LA.init({id:"KQdBh9bWzAxDECPa",ck:"KQdBh9bWzAxDECPa"})`,
-            }}
-        /> */}
+        
     </div>
 }
