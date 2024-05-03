@@ -59,19 +59,6 @@ const RootLayout = ({ children, params }: { children?: React.ReactNode, params: 
 
   return (<html lang={params.lang}>
     <body style={{ margin: 0, padding: 0 }}>
-    <head>
-        {/* 在这里插入51.la的统计代码 */}
-        <script
-          charSet="UTF-8"
-          id="LA_COLLECT"
-          src="//sdk.51.la/js-sdk-pro.min.js"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `LA.init({id:"KQdBh9bWzAxDECPa",ck:"KQdBh9bWzAxDECPa"})`,
-          }}
-        />
-      </head>
       <AntdRegistry>
         <Layout style={{ backgroundColor: '#fff', overflow: 'hidden',minHeight: '100vh' }}>
           <HeaderMod contentWrapperStyle={contentWrapperStyle} routers={routers} />
