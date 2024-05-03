@@ -65,7 +65,6 @@ const RootLayout = ({ children, params }: { children?: React.ReactNode, params: 
           charSet="UTF-8"
           id="LA_COLLECT"
           src="//sdk.51.la/js-sdk-pro.min.js"
-          async
         />
         <script
           dangerouslySetInnerHTML={{
@@ -74,7 +73,7 @@ const RootLayout = ({ children, params }: { children?: React.ReactNode, params: 
         />
       </head>
       <AntdRegistry>
-        <Layout style={{ backgroundColor: '#fff', overflow: 'hidden' }}>
+        <Layout style={{ backgroundColor: '#fff', overflow: 'hidden',minHeight: '100vh' }}>
           <HeaderMod contentWrapperStyle={contentWrapperStyle} routers={routers} />
           <Content >
             <div style={{ ...contentWrapperStyle, marginTop: '64px' }}>

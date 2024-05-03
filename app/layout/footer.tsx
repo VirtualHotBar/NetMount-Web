@@ -6,6 +6,7 @@ function FooterMod() {
     return (
         <Footer style={{ textAlign: 'center' }}>
             <div style={{ maxWidth: '90%', margin: '0 auto' }}>
+                <p><a href="//docs.netmount.cn/qq-group" target="_blank" className="class-link" rel="noopener">加入官方Q群</a><br /><br /></p>
                 <p style={{ textAlign: 'center' }}><strong>友 情 链 接</strong></p>
                 <p><a href="https://blog.hotpe.top/" target="_blank" className="class-link" rel="noopener" >VirtualHotBar</a> |
                     <a href="https://www.hotpe.top/" target="_blank" className="class-link" rel="noopener" >HotPE工具箱</a> |
