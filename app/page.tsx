@@ -44,19 +44,22 @@ export default function page() {
         {/* 网盘 */}
         <ScrollImages scrollSpeed={50} images={[
           { title: 'Alist', img: '/img/storage/others/alist.svg' },
-
+          { title: '百度网盘', img: '/img/storage/netdisk/BaiduNetDisk.png' },
+          { title: '阿里云盘', img: '/img/storage/netdisk/aliyundrive.png' },
+          { title: '天翼云盘', img: '/img/storage/netdisk/189Cloud.png' },
+          { title: '腾讯微云', img: '/img/storage/netdisk/weiyun.png' },
           { title: 'Box', img: '/img/storage/netdisk/Box.svg' },
           { title: 'Dropbox', img: '/img/storage/netdisk/Dropbox.png' },
           { title: 'GoogleDrive', img: '/img/storage/netdisk/GoogleDrive.svg' },
           { title: 'Mega', img: '/img/storage/netdisk/Mega.svg' },
           { title: 'OneDrive', img: '/img/storage/netdisk/OneDrive.svg' },
-          { title: 'pCloud', img: '/img/storage/netdisk/pCloud2.png' },
-          { title: 'SharePoint', img: '/img/storage/netdisk/SharePoint.svg' },
-          { title: 'YandexDisk', img: '/img/storage/netdisk/YandexDisk2.png' },
+          { title: '115网盘', img: '/img/storage/netdisk/115.png' },
         ]} />
         <br />
         <ScrollImages scrollSpeed={70} images={[
-          { title: 'OSS', img: '/img/storage/vendors/AlibabaObjectStorage.svg' },
+          { title: 'SharePoint', img: '/img/storage/netdisk/SharePoint.svg' },
+          { title: 'YandexDisk', img: '/img/storage/netdisk/YandexDisk2.png' },
+
           { title: 'Azure', img: '/img/storage/vendors/Azure.svg' },
           { title: 'TencentCloud', img: '/img/storage/vendors/TencentCloud.svg' },
           { title: 'Backblaze', img: '/img/storage/vendors/Backblaze.svg' },
@@ -65,19 +68,21 @@ export default function page() {
           { title: 'DigitalOcean', img: '/img/storage/vendors/DigitalOcean.svg' },
           { title: 'DirectCloud', img: '/img/storage/vendors/DirectCloud.svg' },
           { title: 'GoogleCloud', img: '/img/storage/vendors/GoogleCloudPlatform.svg' },
-          { title: 'IBMCloud', img: '/img/storage/vendors/IBMObjectStorage.svg' },
+
         ]} />
         <br />
         <ScrollImages scrollSpeed={60} images={[
+          { title: 'OSS', img: '/img/storage/vendors/AlibabaObjectStorage.svg' },
+          { title: 'IBMCloud', img: '/img/storage/vendors/IBMObjectStorage.svg' },
+          { title: 'pCloud', img: '/img/storage/netdisk/pCloud2.png' },
           { title: 'IDrivee', img: '/img/storage/vendors/IDrivee2.svg' },
           { title: 'OracleCloud', img: '/img/storage/vendors/OracleCloud.svg' },
-
           { title: 'AWS S3', img: '/img/storage/protocol/aws-s3.svg' },
           { title: 'FTP', img: '/img/storage/protocol/ftp.png' },
           { title: 'WebDAV', img: '/img/storage/protocol/webdav.jpg' },
           { title: 'MinIO', img: '/img/storage/protocol/MinIO.svg' },
           { title: 'Nextcloud', img: '/img/storage/others/Nextcloud.svg' },
-          { title: 'OwnCloud', img: '/img/storage/others/OwnCloud.svg' },
+          /* { title: 'OwnCloud', img: '/img/storage/others/OwnCloud.svg' }, */
         ]} />
       </div>
 
@@ -103,14 +108,14 @@ export default function page() {
       </div>
 
 
-      <div style={{ marginTop: '8rem', width: '100%',display: 'flex', justifyContent: 'center' }}>
-        <div style={{width: '50%'}}>            
+      <div style={{ marginTop: '8rem', width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ width: '50%' }}>
           <p style={{ fontSize: '1.5rem', color: 'rgb(55, 125, 255)' }}>挂载云存储</p>
           <p style={{ fontSize: '35px', /* color: 'rgb(55, 125, 255)' */ }}><strong>像本地磁盘一样管理你的文件</strong></p>
-          <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136);' ,paddingRight: '5%'}}>云存储整合为本地文件系统，使用户能无缝访问云端资源，通过虚拟文件系统技术实现高效操作，简化数据管理，提供流畅的云-本地交互体验。</p>
+          <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136);', paddingRight: '5%' }}>云存储整合为本地文件系统，使用户能无缝访问云端资源，通过虚拟文件系统技术实现高效操作，简化数据管理，提供流畅的云-本地交互体验。</p>
         </div>
 
-        <div style={{ ...boxStyle, width: '50%', height: '20rem', overflow: 'hidden',textAlign: 'right' }}>
+        <div style={{ ...boxStyle, width: '50%', height: '20rem', overflow: 'hidden', textAlign: 'right' }}>
           <img src="//p1.hotpe.top/i/p/1/66321b052e370.png" style={{
             width: '100%',
           }} />
@@ -119,7 +124,11 @@ export default function page() {
       </div>
 
       <div style={{ marginTop: '5rem', marginBottom: '5rem', width: '100%', textAlign: 'center' }}>
-        <p style={{ fontSize: '1.1rem', }}><strong>NetMount由<a target="_blank" className="class-link" rel="noopener" href='https://github.com/rclone/rclone'>Rclone</a>强力驱动</strong></p>
+        <p style={{ fontSize: '1.1rem', }}><strong>NetMount由
+          <a target="_blank" className="class-link" rel="noopener" href='https://github.com/rclone/rclone'>Rclone</a>
+          和
+          <a target="_blank" className="class-link" rel="noopener" href='https://github.com/alist-org/alist'>Alist</a>
+          强力驱动</strong></p>
       </div>
 
 
