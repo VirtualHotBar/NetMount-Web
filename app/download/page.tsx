@@ -43,7 +43,7 @@ export default function Download() {
         if (!lang) {
             lang = 'zh';
         }
-        dlUrl=`//api.hotpe.top/API/NetMount/Download/?os=${os}&arch=${arch}&type=${type}&lang=${lang}`
+        dlUrl = `//api.hotpe.top/API/NetMount/Download/?os=${os}&arch=${arch}&type=${type}&lang=${lang}`
         location.href = dlUrl
         setTimeout(() => {
             setIsModalOpen(true);
@@ -73,7 +73,7 @@ export default function Download() {
                 open={isModalOpen}
                 onCancel={() => { setIsModalOpen(false) }}
                 footer={<Space>
-                    <Button onClick={() => { noStartDownload()}}>没有开始下载</Button>
+                    <Button onClick={() => { noStartDownload() }}>没有开始下载</Button>
                     <Button type='primary' onClick={() => { open('//api.hotpe.top/API/NetMount/GoLink?id=docs-start', '_blank') }}>好的</Button>
                 </Space>}
             >
@@ -102,7 +102,7 @@ export default function Download() {
                     <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>MacOS</p>
                     <Space>
                         <Button onClick={() => { startDownload('mac', 'arm64', 'dmg'); }} style={{ marginTop: '1rem' }} type='primary' >Arm</Button>
-                        <Button onClick={() => { startDownload('mac', 'x64', 'dmg'); }} style={{ marginTop: '1rem' }} type='primary' >Inter</Button>
+                        <Button onClick={() => { startDownload('mac', 'x64', 'dmg'); }} style={{ marginTop: '1rem' }} type='primary' >Intel</Button>
                     </Space>
                 </Card>
             </div>
@@ -115,10 +115,14 @@ export default function Download() {
                         <a href="//api.hotpe.top/API/NetMount/GoLink?id=update-log" style={{ color: 'rgb(103, 119, 136)' }} target="_blank" className="class-link" rel="noopener nofollow">更新日志</a>
                     </Space> : '正在加载...'
                 }
-
                 <br />
-                使用NetMount及其相关功能表示您已经阅读并同意
+                下载或使用NetMount表示您已阅读并同意
                 <a href="//api.hotpe.top/API/NetMount/GoLink?id=contract" style={{ color: 'rgb(103, 119, 136)' }} target="_blank" className="class-link" rel="noopener nofollow">用户协议</a>
+                <br />
+                安装包直链下载服务由
+                <a href="//123pan.com" style={{ color: 'rgb(103, 119, 136)',fontWeight:'bold' }} target="_blank" className="class-link" rel="noopener nofollow">123云盘</a>
+                
+                提供
             </div>
 
         </div>
