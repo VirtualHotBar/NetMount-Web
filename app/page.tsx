@@ -43,17 +43,18 @@ export default function page() {
         <br />
         {/* 网盘 */}
         <ScrollImages scrollSpeed={50} images={[
-          { title: 'Alist', img: '/img/storage/others/alist.svg' },
           { title: '百度网盘', img: '/img/storage/netdisk/BaiduNetDisk.png' },
+          { title: 'Alist', img: '/img/storage/others/alist.svg' },
           { title: '阿里云盘', img: '/img/storage/netdisk/aliyundrive.png' },
+          { title: '123云盘', img: '/img/storage/netdisk/123pan.png' },
           { title: '天翼云盘', img: '/img/storage/netdisk/189Cloud.png' },
-          { title: '腾讯微云', img: '/img/storage/netdisk/weiyun.png' },
           { title: 'Box', img: '/img/storage/netdisk/Box.svg' },
+          { title: '腾讯微云', img: '/img/storage/netdisk/weiyun.png' },
           { title: 'Dropbox', img: '/img/storage/netdisk/Dropbox.png' },
           { title: 'GoogleDrive', img: '/img/storage/netdisk/GoogleDrive.svg' },
           { title: 'Mega', img: '/img/storage/netdisk/Mega.svg' },
           { title: 'OneDrive', img: '/img/storage/netdisk/OneDrive.svg' },
-          { title: '115网盘', img: '/img/storage/netdisk/115.png' },
+          /* { title: '115网盘', img: '/img/storage/netdisk/115.png' }, */
         ]} />
         <br />
         <ScrollImages scrollSpeed={70} images={[
