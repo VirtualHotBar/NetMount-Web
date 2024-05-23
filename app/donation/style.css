@@ -1,0 +1,40 @@
+
+.donation-table {
+    margin: 0 auto;
+    /* 表格居中显示 */
+    width: 100%;
+    /* 表格宽度设置为父容器的100%，实现自适应 */
+    max-width: 800px;
+    /* 可设定一个最大宽度以保证在大屏幕上也不会过大 */
+    border-collapse: collapse;
+    /* 去除表格间隔 */
+}
+
+.donation-table th,
+.donation-table td {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    /* 单元格边框线 */
+    padding: 8px 12px;
+    /* 单元格内边距 */
+    text-align: center;
+    /* 可选：使表头和内容居中对齐 */
+}
+
+.donation-table thead {
+    background-color: rgba(0, 0, 0, 0.08);
+    /* 表头背景色 */
+}
+
+.donation-table thead th {
+    font-weight: normal;
+    /* 表头字体不加粗 */
+    /* color: rgba(0, 0, 0, 0.88); */
+    /* 表头字体颜色 */
+    text-align: center;
+    /* 可选：使表头文字居中对齐 */
+}
+
+.donation-table img {
+    max-width: 100%;
+    /* 图片宽度设为100%，实现自适应 */
+}

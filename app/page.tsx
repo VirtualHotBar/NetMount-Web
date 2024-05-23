@@ -125,11 +125,11 @@ export default function page() {
       </div>
 
       <div style={{ marginTop: '5rem', marginBottom: '5rem', width: '100%', textAlign: 'center' }}>
-        <p style={{ fontSize: '1.1rem', }}><strong>NetMount由
+        <p /* style={{ fontSize: '1.1rem', }} */>NetMount由
           <a target="_blank" className="class-link" rel="noopener" href='https://github.com/rclone/rclone'>Rclone</a>
           和
           <a target="_blank" className="class-link" rel="noopener" href='https://github.com/alist-org/alist'>Alist</a>
-          强力驱动</strong></p>
+          强力驱动</p>
       </div>
 
 

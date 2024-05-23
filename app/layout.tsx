@@ -30,6 +30,11 @@ const routers: Array<Routers> = [
     path: '/',
   },
   {
+    word: '捐赠',
+    title: '捐赠 - NetMount',
+    path: '/donation',
+  }, 
+  {
     word: '文档',
     title: '',
     path: '//docs.netmount.cn'
@@ -38,7 +43,8 @@ const routers: Array<Routers> = [
     word: '下载',
     title: '下载 - NetMount',
     path: '/download',
-  }, {
+  }, 
+  {
     word: 'GitHub',
     title: '',
     path: '//github.com/VirtualHotBar/NetMount/'
@@ -48,8 +54,7 @@ const routers: Array<Routers> = [
 
 export const metadata: Metadata = {
   /*   title: "NetMount", */
-  description: "统一管理和挂载云存储设施",
-  
+  description: " NetMount是一个云存储管理工具，一个软件轻松管理所有云存储，像操作本地磁盘一样组织文件。支持国内外近100种云存储，如OneDrive、百度网盘、S3对象存储、天翼云盘等。  ",
 };
 
 
