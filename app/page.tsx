@@ -90,17 +90,17 @@ export default function page() {
       <div style={{ marginTop: '5rem', textAlign: 'center' }}>
         {/* <p style={{ fontSize: '1.5rem', color: 'rgb(55, 125, 255)' }}>存储管理</p> */}
         <p style={{ fontSize: '35px', /* color: 'rgb(55, 125, 255)' */ }}><strong>集中直观的存储管理</strong></p>
-        <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136);' }}>功能丰富的文件浏览器，支持文件上传、复制、移动、删除、重命名。</p>
+        <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136)' }}>功能丰富的文件浏览器，支持文件上传、复制、移动、删除、重命名。</p>
         <br />
         <div style={{ width: '100%' }}>
           <Space size={'large'} style={{ margin: 'auto' }}>
             <div style={{ ...boxStyle, width: '35rem', height: '17rem', overflow: 'hidden' }}>
-              <img src="//p1.hotpe.top/i/p/1/663324b5e0c69.png" style={{
+              <img src="//p1.hotpe.top/i/p/1/665ede1987231.png" style={{
                 width: '100%',
               }} />
             </div>
             <div style={{ ...boxStyle, width: '35rem', height: '17rem', overflow: 'hidden' }}>
-              <img src="//p1.hotpe.top/i/p/1/66321a05cddfc.png" style={{
+              <img src="//p1.hotpe.top/i/p/1/665ede1a0e706.png" style={{
                 width: '100%',
               }} />
             </div>
@@ -113,15 +113,32 @@ export default function page() {
         <div style={{ width: '50%' }}>
           <p style={{ fontSize: '1.5rem', color: 'rgb(55, 125, 255)' }}>挂载云存储</p>
           <p style={{ fontSize: '35px', /* color: 'rgb(55, 125, 255)' */ }}><strong>像本地磁盘一样管理你的文件</strong></p>
-          <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136);', paddingRight: '5%' }}>云存储整合为本地文件系统，使用户能无缝访问云端资源，通过虚拟文件系统技术实现高效操作，简化数据管理，提供流畅的云-本地交互体验。</p>
+          <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136)', paddingRight: '5%' }}>云存储整合为本地文件系统，使用户能无缝访问云端资源，通过虚拟文件系统技术实现高效操作，简化数据管理，提供流畅的云-本地交互体验。</p>
         </div>
 
-        <div style={{ ...boxStyle, width: '50%', height: '20rem', overflow: 'hidden', textAlign: 'right' }}>
-          <img src="//p1.hotpe.top/i/p/1/66321b052e370.png" style={{
+        <div style={{ ...boxStyle, width: '50%', height: '13rem', overflow: 'hidden', textAlign: 'right' }}>
+          <img src="//p1.hotpe.top/i/p/1/665edd92c1d17.png" style={{
             width: '100%',
+            padding: '2rem'
           }} />
         </div>
 
+      </div>
+
+
+
+      <div style={{ marginTop: '8rem', width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ ...boxStyle, width: '50%', height: '21rem', overflow: 'hidden', textAlign: 'right', marginRight: '3%' }}>
+          <img src="//p1.hotpe.top/i/p/1/665eded1ae9e0.png" style={{
+            padding: '1.5rem'
+          }} />
+        </div>
+
+        <div style={{ width: '50%' }}>
+          <p style={{ fontSize: '1.5rem', color: 'rgb(55, 125, 255)' }}>计划任务</p>
+          <p style={{ fontSize: '35px', /* color: 'rgb(55, 125, 255)' */ }}><strong>定时同步或迁移你的文件</strong></p>
+          <p style={{ fontSize: '1.2rem', color: 'rgb(103, 119, 136)' }}>以间隔、定时、启动时等任务形式，在不同云存储服务之间执行文件的同步、双向同步、复制、删除和移动等操作。</p>
+        </div>
       </div>
 
       <div style={{ marginTop: '5rem', marginBottom: '5rem', width: '100%', textAlign: 'center' }}>
