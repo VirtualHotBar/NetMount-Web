@@ -14,9 +14,24 @@ importers:
       '@ant-design/nextjs-registry':
         specifier: ^1.0.0
         version: 1.0.0(@ant-design/cssinjs@1.20.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(antd@5.18.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/node':
+        specifier: ^20
+        version: 20.14.1
+      '@types/react':
+        specifier: ^18
+        version: 18.3.3
+      '@types/react-dom':
+        specifier: ^18
+        version: 18.3.0
       antd:
         specifier: ^5.16.5
         version: 5.18.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      eslint:
+        specifier: ^8
+        version: 8.57.0
+      eslint-config-next:
+        specifier: 14.2.3
+        version: 14.2.3(eslint@8.57.0)(typescript@5.4.5)
       framer-motion:
         specifier: ^11.1.7
         version: 11.2.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -32,6 +47,9 @@ importers:
       next-intl:
         specifier: ^3.12.0
         version: 3.14.1(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      postcss:
+        specifier: ^8
+        version: 8.4.38
       react:
         specifier: ^18
         version: 18.3.1
@@ -41,25 +59,6 @@ importers:
       react-i18next:
         specifier: ^14.1.1
         version: 14.1.2(i18next@23.11.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-    devDependencies:
-      '@types/node':
-        specifier: ^20
-        version: 20.14.1
-      '@types/react':
-        specifier: ^18
-        version: 18.3.3
-      '@types/react-dom':
-        specifier: ^18
-        version: 18.3.0
-      eslint:
-        specifier: ^8
-        version: 8.57.0
-      eslint-config-next:
-        specifier: 14.2.3
-        version: 14.2.3(eslint@8.57.0)(typescript@5.4.5)
-      postcss:
-        specifier: ^8
-        version: 8.4.38
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.3
