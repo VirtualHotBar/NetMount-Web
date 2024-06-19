@@ -3,10 +3,11 @@ import { Button, Card, Space } from 'antd'
 import Modal from 'antd/es/modal/Modal';
 import React, { useEffect, useState } from 'react'
 
-/* import iconWindows from '../../public/img/system/windows.svg'
+import iconWindows from '../../public/img/system/windows.svg'
 import iconLinux from '../../public/img/system/linux.svg'
-import iconMacos from '../../public/img/system/macos.svg' */
+import iconMacos from '../../public/img/system/macos.svg' 
 import Image from 'next/image';
+import { img2b64str } from '@/util/img2b64str';
 
 
 interface ReleaseData {
@@ -63,6 +64,8 @@ export default function Download() {
                 console.error('get update failed');
             }
         })
+
+        
     }, [])
 
 
@@ -84,12 +87,12 @@ export default function Download() {
             <h1 style={{ textAlign: 'center', fontSize: '1.75rem', fontWeight: 'bold' }}>下载</h1>
             <div style={{ width: '50rem', margin: '0 auto', display: 'flex', marginTop: '3rem' }}>
                 <Card style={{ width: '15rem', height: '10rem', textAlign: 'center', alignItems: 'center', margin: 'auto' }}>
-                    <img style={{ margin: 'auto' }} src="/img/system/windows.svg" />
+                    <Image style={{ margin: 'auto' }} src={iconWindows} alt=''/>
                     <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Windows</p>
                     <Button onClick={() => { startDownload('windows', 'x64', 'exe'); }} style={{ marginTop: '1rem' }} type='primary'>下载</Button>
                 </Card>
                 <Card style={{ width: '15rem', height: '10rem', textAlign: 'center', alignItems: 'center', margin: 'auto' }}>
-                    <img style={{ margin: 'auto' }} src="/img/system/linux.svg" />
+                    <Image style={{ margin: 'auto' }} src={iconLinux}  alt=''/>
                     <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Linux</p>
                     <Space>
                         <Button onClick={() => { startDownload('linux', 'x64', 'deb'); }} style={{ marginTop: '1rem' }} type='primary' >Debian</Button>
@@ -98,7 +101,7 @@ export default function Download() {
 
                 </Card>
                 <Card style={{ width: '15rem', height: '10rem', textAlign: 'center', alignItems: 'center', margin: 'auto' }}>
-                    <img style={{ margin: 'auto' }} src="/img/system/macos.svg" />
+                    <Image style={{ margin: 'auto' }} src={iconMacos}  alt=''/>
                     <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>MacOS</p>
                     <Space>
                         <Button onClick={() => { startDownload('mac', 'arm64', 'dmg'); }} style={{ marginTop: '1rem' }} type='primary' >Arm</Button>

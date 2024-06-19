@@ -6,8 +6,8 @@ import { Menu } from 'antd';
 import { Routers } from '../type/routers';
 import { usePathname } from 'next/navigation';
 import Head from 'next/head';
-
-
+import Image from 'next/image';
+import iconNetMount from '../../public/img/color.svg';
 
 export default function HeaderMod(props: { contentWrapperStyle: CSSProperties, routers: Routers[] }) {
     const pathname = usePathname();
@@ -68,7 +68,7 @@ export default function HeaderMod(props: { contentWrapperStyle: CSSProperties, r
                 <title>{title}</title>
 
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'left' }} onClick={() => { location.href = '/' }}>
-                    <img style={{ width: '30px', marginRight: '10px' }} src="/img/color.svg" />
+                    <Image width={30}  style={{  marginRight: '10px' }} alt='' src={iconNetMount} />
                     <strong style={{ fontSize: '20px' }} >NetMount</strong>
                 </div>
                 <div style={{ width: '100%' }}></div>

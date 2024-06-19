@@ -4,6 +4,9 @@ const nextConfig = {
         locales:['zh','en'],
         defaultLocale:'zh',
     } */
+   images:{
+       domains:['p1.hotpe.top']
+   }
 };
 
 export default nextConfig;
