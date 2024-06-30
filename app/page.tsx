@@ -18,6 +18,9 @@ export default function page() {
 
   return (
     <div style={{ paddingTop: '8rem' }}>
+      <div style={{height:0,width:0}}>
+        <img src="//i.vhbs.top/i/p/1/6680b237358d6.png" />
+      </div>
       <Row>
         <Col flex={24}>
           <div style={{ height: '6rem' }}></div>
