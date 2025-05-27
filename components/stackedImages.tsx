@@ -23,7 +23,7 @@ const StackedImages = ({ images, style }: { images: string[], style?: React.CSSP
             boxShadow: '0 10px 22px 0 rgba(0,0,0,.18),0 8px 30px 0 rgba(0,0,0,.15)',
           }}
         >
-          <img src={image} alt="" className="w-full object-cover" />
+          <Image src={image} alt="" className="w-full object-cover" width={800} height={800}  />
         </motion.div>
       ))}
     </div>

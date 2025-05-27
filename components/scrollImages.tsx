@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion';
+import Image from 'next/image';
 
 interface ImageProps {
   img: string;
@@ -59,10 +60,13 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, scrollSpeed }) => {
             textAlign: 'center',
           }}
           >
-            <img
+            <Image
               src={img.img}
               alt={`image-${index}`}
-              style={{/*  width: `${singleImageWidth}px`, */ height: '3rem' }}
+              width={50}
+              height={50} // 设置高度为50px，保持图片比例
+
+              style={{  /* width: `${singleImageWidth}px`,  */ height: '3rem',width: 'auto' }}
             />
             <span style={{ fontSize: '1rem', color: '#333333', margin: '0 0 10px 0' }}>
               {img.title}

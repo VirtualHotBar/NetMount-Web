@@ -121,11 +121,11 @@ export default function Download() {
                 <br />
                 下载或使用NetMount表示您已阅读并同意
                 <a href="//api.hotpe.top/API/NetMount/GoLink?id=contract" style={{ color: 'rgb(103, 119, 136)' }} target="_blank" className="class-link" rel="noopener nofollow">用户协议</a>
-                <br />
+                {/* <br />
                 安装包直链下载服务由
                 <a href="//123pan.com" style={{ color: 'rgb(103, 119, 136)',fontWeight:'bold' }} target="_blank" className="class-link" rel="noopener nofollow">123云盘</a>
                 
-                提供
+                提供 */}
             </div>
 
         </div>
