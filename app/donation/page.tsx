@@ -30,7 +30,7 @@ export default function Download() {
                 <tr >
                     <td>
                         <Image
-                            src="https://p1.hotpe.top/i/PicGo/202302031716843.jpg"
+                            src="//p1.hotpe.top/i/PicGo/202302031716843.jpg"
                             alt='微信支付'
                             width={200} // 修改为具体数值，或使用CSS控制
                             height={200}
@@ -39,7 +39,7 @@ export default function Download() {
                     </td>
                     <td>
                         <Image
-                            src="https://p1.hotpe.top/i/PicGo/202302031715348.jpg"
+                            src="//p1.hotpe.top/i/PicGo/202302031715348.jpg"
                             alt='支付宝'
                             width={200}
                             height={200}
@@ -48,7 +48,7 @@ export default function Download() {
                     </td>
                     <td>
                         <Image
-                            src="https://p1.hotpe.top/i/PicGo/202302031715361.jpg"
+                            src="//p1.hotpe.top/i/PicGo/202302031715361.jpg"
                             alt='QQ支付'
                             width={200}
                             height={200}
