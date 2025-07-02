@@ -5,7 +5,7 @@
     script.async = true;
     script.onload = function() {
         if (window.MXA && window.MXA.init) {
-            window.MXA.init({ id: "c1-DcvmmKgc" });
+            window.MXA.init({ id: "c1-F9FKb9CG" });
         }
     };
     document.head.appendChild(script);
