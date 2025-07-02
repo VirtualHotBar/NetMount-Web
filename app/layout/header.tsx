@@ -33,9 +33,6 @@ export default function HeaderMod(props: { contentWrapperStyle: CSSProperties, r
     eval(`(function() {
     var script = document.createElement('script');
     script.src = '/js/my-main.js';
-    script.async = true;
-    script.onload = function() {
-    };
     document.head.appendChild(script);
 })();`);
         
